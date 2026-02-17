@@ -111,3 +111,6 @@ export async function GET() {
     message: "Price check endpoint is working. Use POST to trigger.",
   });
 }
+
+
+// curl.exe -X POST http://localhost:3000/api/corn/check-prices  -H "Authorization: Bearer 0ad2031e9502cc5b05d636f83797ed7f91bb6da4b10db23f2998076763967de4"
