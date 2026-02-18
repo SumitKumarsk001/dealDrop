@@ -38,16 +38,25 @@ export default async function Home() {
   return (
     <>
    <main className="min-h-screen bg-linear-to-br from-orange-50 via-white to-orange-50">
-    <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky  top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <Image src={"/deal-drop-logo.png"} alt="Deal drop logo"
-          width={600} height={200} className="h-10 w-auto"/>
-        </div>
-        { /** Auth Button */ }
-       <AuthButton user={user}/>
-      </div>
-    </header>
+    <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+  <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center w-full">
+    
+    <div className="flex items-center gap-3">
+      <Image
+        src="/deal-drop-logo.png"
+        alt="Deal drop logo"
+        width={150}
+        height={50}
+        className="h-8 sm:h-10 w-auto"
+      />
+    </div>
+
+    <div className="flex-shrink-0">
+      <AuthButton user={user} />
+    </div>
+
+  </div>
+</header>
 
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
